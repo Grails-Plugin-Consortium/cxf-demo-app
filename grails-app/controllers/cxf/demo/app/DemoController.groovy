@@ -1,12 +1,12 @@
 package cxf.demo.app
 
-import com.cxf.demo.sample.client.SampleService
-import net.webservicex.ICD9Soap
-
 class DemoController {
 
-    ICD9Soap icd9Client
-    SampleService localClient
+    //todo: these can only be typed if already exist (must generate first wsdl-to-java
+//    ICD9Soap icd9Client
+    def icd9Client
+//    com.cxf.demo.sample.client.SampleService localClient
+    def localClient
 
     def index() {
         render(view: "/index")
